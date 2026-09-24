@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-major-strategies"
+version = "0.1.0"
+description = "Dependency-free systematic strategy research for crypto majors"
+requires-python = ">=3.10"
+
+[project.scripts]
+crypto-backtest = "crypto_strategies.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["crypto_strategies*"]
